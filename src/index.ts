@@ -1,6 +1,15 @@
+/**
+ * func is once invoke function type
+ */
 export type func<T = any> = () => Promise<T>
+/**
+ * syncFunc is syncOnce invoke function type
+ */
 export type syncFunc<T = any> = () => T
 
+/**
+ * Once is once manage class
+ */
 class Once {
   private onceMap = new Map<string, any>()
   /**
