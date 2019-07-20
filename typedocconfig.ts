@@ -4,6 +4,6 @@ module.exports = {
   excludePrivate: true,
   excludeProtected: true,
   excludeExternals: true,
-  theme: 'default',
+  theme: 'minimal',
   out: './docs'
 }

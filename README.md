@@ -1,6 +1,6 @@
 # once
 
-[![NPM version](https://img.shields.io/npm/v/@zcong/once.svg?style=flat)](https://npmjs.com/package/@zcong/once) [![NPM downloads](https://img.shields.io/npm/dm/@zcong/once.svg?style=flat)](https://npmjs.com/package/@zcong/once) [![CircleCI](https://circleci.com/gh/zcong1993/once/tree/master.svg?style=shield)](https://circleci.com/gh/zcong1993/once/tree/master) [![codecov](https://codecov.io/gh/zcong1993/once/branch/master/graph/badge.svg)](https://codecov.io/gh/zcong1993/once)
+[![NPM version](https://img.shields.io/npm/v/@zcong/once.svg?style=flat)](https://npmjs.com/package/@zcong/once) [![NPM downloads](https://img.shields.io/npm/dm/@zcong/once.svg?style=flat)](https://npmjs.com/package/@zcong/once) [![CircleCI](https://circleci.com/gh/zcong1993/once/tree/master.svg?style=shield)](https://circleci.com/gh/zcong1993/once/tree/master) [![codecov](https://codecov.io/gh/zcong1993/once/branch/master/graph/badge.svg)](https://codecov.io/gh/zcong1993/once) [![typedoc](https://img.shields.io/badge/typedoc-active-brightgreen.svg)](https://zcong1993.github.io/once)
 
 > sync once helper
 
