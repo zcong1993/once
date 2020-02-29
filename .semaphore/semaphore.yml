@@ -1,0 +1,42 @@
+version: v1.0
+name: Once
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+
+blocks:
+  - name: "Install dependencies"
+    task:
+      prologue:
+        commands:
+          # Get the latest version of our source code from GitHub:
+          - checkout
+
+          # Use the version of Node.js specified in .nvmrc.
+          # Semaphore provides nvm preinstalled.
+          - nvm use
+          - node --version
+          - npm --version
+      jobs:
+        - name: yarn install and cache
+          commands:
+            - cache restore
+            - yarn
+            - cache store
+
+  - name: "Test and Upload coverage"
+    task:
+      prologue:
+        commands:
+          - checkout
+          - nvm use
+          - node --version
+          - npm --version
+      jobs:
+        - name: run test
+          commands:
+            - yarn test:cov
+        - name: upload coverage
+          commands:
+            - bash <(curl -s https://codecov.io/bash)
