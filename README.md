@@ -21,7 +21,7 @@ class Test {}
 const f = async () => new Test()
 for (const _ of Array(10)) {
   const test: Test = once.syncOnce<Test>('test', mockFn)
-  // test is Test instance which is f() returned
+  // test is Test instance which is f() returned.
 }
 ```
 
