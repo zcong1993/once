@@ -5,5 +5,5 @@ module.exports = {
   excludeProtected: true,
   excludeExternals: true,
   theme: 'minimal',
-  out: './docs'
+  out: './docs',
 }

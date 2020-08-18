@@ -16,7 +16,8 @@
     "jest": "jest --detectOpenHandles --forceExit",
     "jest:cov": "jest --coverage --detectOpenHandles --forceExit",
     "prepublishOnly": "npm run build",
-    "doc": "node_modules/.bin/typedoc --options ./typedocconfig.ts && touch ./docs/.nojekyll"
+    "doc": "node_modules/.bin/typedoc --options ./typedocconfig.ts && touch ./docs/.nojekyll",
+    "release": "shipjs prepare"
   },
   "types": "./dist/index.d.ts",
   "author": "zcong1993",
@@ -28,6 +29,7 @@
     "jest": "^26.0.0",
     "lint-staged": "^10.0.0",
     "prettier": "^2.0.0",
+    "shipjs": "0.20.1",
     "ts-jest": "^26.0.0",
     "tslint": "^6.0.0",
     "tslint-config-airbnb": "^5.11.1",
